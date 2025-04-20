@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #111;
+    }
+    header {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .hero img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin-right: 2rem;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+    .hero-text p {
+      margin: 1rem 0;
+    }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border: 2px solid black;
+      border-radius: 30px;
+      background: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .project img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .project h3 {
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Seu Nome Portfolio</h2>
+    <button class="btn">Contact Me</button>
+  </header>
+
+  <div class="hero">
+    <img src="https://via.placeholder.com/300" alt="Sua foto">
+    <div class="hero-text">
+      <h1>Hey, I'm [Seu Nome]</h1>
+      <p>This is a short professional bio. You can write about what you do, your expertise, or your mission.</p>
+      <button class="btn">Check out my projects →</button>
+    </div>
+  </div>
+
+  <section>
+    <h2>My Work / Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://via.placeholder.com/400x200" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Short description of the project. What it does, tech used, impact.</p>
+        <button class="btn">Read More →</button>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x200" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Short description of the project. What it does, tech used, impact.</p>
+        <button class="btn">Read More →</button>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x200" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>Short description of the project. What it does, tech used, impact.</p>
+        <button class="btn">Read More →</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
