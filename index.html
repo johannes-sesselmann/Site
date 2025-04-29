@@ -53,9 +53,11 @@
       text-align: center;
     }
     .hero img {
-      max-width: 150px;  /* Ajuste o tamanho conforme necessário */
+      max-width: 200px;  /* Ajuste o tamanho para ficar mais visível */
       border-radius: 1rem;
-      margin-right: 2rem;  /* Espaço entre a imagem e o texto */
+      margin-right: 2rem;
+      object-fit: cover;
+      transform: scale(1.1);  /* Aumenta o zoom da imagem */
     }
     .hero-text {
       max-width: 600px;
@@ -132,12 +134,10 @@
   </header>
 
   <div class="hero">
-    <!-- Agora a imagem de perfil está ao lado do texto "Olá, sou [Seu Nome]" -->
     <img src="assets/IMG-20250329-WA0076.jpg" alt="Foto de Johannes">
     <div class="hero-text">
       <h1>Olá, sou Johannes Sesselmann</h1>
       <p>Veja alguns dos meus projetos de engenharia de dados abaixo.</p>
-      <button class="btn">Veja meus projetos →</button>
     </div>
   </div>
 
@@ -150,13 +150,12 @@
       </div>
       <div class="skill">
         <h3>SQL</h3>
-        <p>Consultas complexas, Bancos de Dados relacionais</p>
+        <p>Consulta em bases de logística, Bancos de Dados relacionais</p>  <!-- Alteração feita -->
       </div>
       <div class="skill">
         <h3>Machine Learning</h3>
         <p>Modelagem de Dados, Algoritmos</p>
       </div>
-      <!-- Adicione mais habilidades conforme necessário -->
     </div>
   </section>
 
@@ -167,13 +166,11 @@
         <img src="https://via.placeholder.com/400x200" alt="Projeto 1">
         <h3>Data Analysis Project</h3>
         <p>Análise de grandes volumes de dados para insights acionáveis usando Python e SQL.</p>
-        <button class="btn">Veja mais →</button>
       </div>
       <div class="project">
         <img src="https://via.placeholder.com/400x200" alt="Projeto 2">
         <h3>Machine Learning Model</h3>
         <p>Desenvolvimento de um modelo preditivo utilizando técnicas de machine learning.</p>
-        <button class="btn">Veja mais →</button>
       </div>
     </div>
   </section>
