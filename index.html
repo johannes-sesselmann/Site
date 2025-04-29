@@ -84,7 +84,7 @@
     }
     .skills {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);  /* Altere para 3 colunas */
+      grid-template-columns: repeat(3, 1fr);  /* 3 colunas */
       gap: 2rem;
       justify-items: center;
     }
@@ -100,9 +100,18 @@
       font-size: 1.5rem;
     }
 
-    /* Alteração para garantir que Nuvem e Web fiquem na mesma linha */
+    /* Novo ajuste para alinhar as habilidades "Nuvem" e "Web" na segunda linha e ao centro */
     .skills .nuvem, .skills .web {
-      grid-column: span 1; /* Ambas ficam em uma linha na grid de 3 colunas */
+      grid-column: span 1; /* As duas habilidades ocupam as colunas adjacentes */
+    }
+
+    /* Alinhamento das habilidades de "Nuvem" e "Web" para ficarem alinhadas entre os outros */
+    .skills .nuvem {
+      margin-top: 30px; /* Ajustando o espaçamento */
+    }
+
+    .skills .web {
+      margin-top: 30px; /* Ajustando o espaçamento */
     }
 
     .projects {
