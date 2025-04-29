@@ -84,11 +84,11 @@
     }
     .skills {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);  /* Mudando a estrutura para 3 colunas */
+      grid-template-columns: repeat(3, 1fr);  /* Altere para 3 colunas */
       gap: 2rem;
       justify-items: center;
     }
-    .skills .skill {
+    .skill {
       background: #fff;
       border-radius: 1rem;
       padding: 2rem;
@@ -99,9 +99,10 @@
       margin-bottom: 1rem;
       font-size: 1.5rem;
     }
-    /* Estilo para as habilidades "Nuvem" e "Web" ficarem na linha de baixo */
+
+    /* Alteração para garantir que Nuvem e Web fiquem na mesma linha */
     .skills .nuvem, .skills .web {
-      grid-column: span 3; /* Faz com que estas habilidades ocupem uma linha inteira */
+      grid-column: span 1; /* Ambas ficam em uma linha na grid de 3 colunas */
     }
 
     .projects {
