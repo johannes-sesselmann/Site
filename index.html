@@ -100,18 +100,9 @@
       font-size: 1.5rem;
     }
 
-    /* Novo ajuste para alinhar as habilidades "Nuvem" e "Web" na segunda linha e ao centro */
+    /* Ajuste para as habilidades "Nuvem" e "Web" ficarem na mesma linha */
     .skills .nuvem, .skills .web {
-      grid-column: span 1; /* As duas habilidades ocupam as colunas adjacentes */
-    }
-
-    /* Alinhamento das habilidades de "Nuvem" e "Web" para ficarem alinhadas entre os outros */
-    .skills .nuvem {
-      margin-top: 30px; /* Ajustando o espaçamento */
-    }
-
-    .skills .web {
-      margin-top: 30px; /* Ajustando o espaçamento */
+      grid-column: span 1; /* Ambas as habilidades ocupam colunas separadas, mas na mesma linha */
     }
 
     .projects {
@@ -187,10 +178,10 @@
         <h3>Machine Learning</h3>
         <p>Modelagem de Dados, Algoritmos</p>
       </div>
-      <!-- Novas habilidades -->
+      <!-- Habilidades ajustadas para a mesma linha -->
       <div class="skill nuvem">
         <h3>Nuvem</h3>
-        <p>AWS</p>
+        <p>Projetos internos utilizando AWS</p>
       </div>
       <div class="skill web">
         <h3>Web</h3>
