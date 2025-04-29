@@ -84,11 +84,11 @@
     }
     .skills {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(3, 1fr);  /* Mudando a estrutura para 3 colunas */
       gap: 2rem;
       justify-items: center;
     }
-    .skill {
+    .skills .skill {
       background: #fff;
       border-radius: 1rem;
       padding: 2rem;
@@ -99,6 +99,11 @@
       margin-bottom: 1rem;
       font-size: 1.5rem;
     }
+    /* Estilo para as habilidades "Nuvem" e "Web" ficarem na linha de baixo */
+    .skills .nuvem, .skills .web {
+      grid-column: span 3; /* Faz com que estas habilidades ocupem uma linha inteira */
+    }
+
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -144,7 +149,7 @@
 </head>
 <body>
   <header>
-    <h2>Meu Portfólio</h2> <!-- Removi o hífen aqui -->
+    <h2>Meu Portfólio</h2>
     <a href="https://www.linkedin.com/in/johannes-sesselmann-1437101b1/" class="btn" target="_blank">Contact Me</a>
   </header>
 
@@ -173,11 +178,11 @@
         <p>Modelagem de Dados, Algoritmos</p>
       </div>
       <!-- Novas habilidades -->
-      <div class="skill">
+      <div class="skill nuvem">
         <h3>Nuvem</h3>
         <p>AWS</p>
       </div>
-      <div class="skill">
+      <div class="skill web">
         <h3>Web</h3>
         <p>React (Frontend), Node.js (Backend)</p>
       </div>
