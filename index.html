@@ -51,15 +51,15 @@
       background: linear-gradient(120deg, #2C3E50, #34495E);
       color: #ecf0f1;
       text-align: center;
-      flex-direction: column;  /* Alteração para centralizar a imagem e o texto */
+      flex-direction: column;
     }
     .hero img {
-      max-width: 300px;  /* Aumentei o tamanho da imagem */
-      width: 100%;  /* Faz a imagem ocupar 100% da largura disponível */
+      max-width: 300px;
+      width: 100%;
       border-radius: 1rem;
-      margin-bottom: 2rem;  /* Adiciona um espaço entre a imagem e o texto */
+      margin-bottom: 2rem;
       object-fit: cover;
-      transform: scale(1.2);  /* Aumenta o zoom da imagem */
+      transform: scale(1.2);
     }
     .hero-text {
       max-width: 600px;
@@ -127,6 +127,15 @@
       margin: 0.5rem 0 1rem;
       color: #555;
     }
+
+    /* Novo estilo para os links */
+    a {
+      color: #ecf0f1; /* Cor do link igual ao texto */
+      text-decoration: none; /* Remove o sublinhado */
+    }
+    a:hover {
+      color: #fff; /* Cor ao passar o mouse sobre o link */
+    }
   </style>
 </head>
 <body>
@@ -136,12 +145,11 @@
   </header>
 
   <div class="hero">
-    <!-- Foto com ênfase (aumentada e centralizada) -->
     <img src="assets/Screenshot_36.png" alt="Foto de Johannes">
     <div class="hero-text">
       <h1>Olá, sou Johannes Sesselmann</h1>
       <p>Sou Engenheiro Mecânico e estou cursando Mestrado em Engenharia da Computação, ambos pela Unicamp - Campinas.</p>
-      <p>Atualmente trabalho na <a href="https://www.flexsim.com/" target="_blank">Flexsim</a></p>
+      <p>Atualmente trabalho na <a href="https://www.flexsim.com/" target="_blank">Autodesk Flexsim</a></p> <!-- Link corrigido -->
     </div>
   </div>
 
@@ -154,7 +162,7 @@
       </div>
       <div class="skill">
         <h3>SQL</h3>
-        <p>Consulta em bases de logística, Bancos de Dados relacionais</p>  <!-- Alteração feita -->
+        <p>Consulta em bases de logística, Bancos de Dados relacionais</p>
       </div>
       <div class="skill">
         <h3>Machine Learning</h3>
